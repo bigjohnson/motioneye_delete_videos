@@ -36,10 +36,10 @@ then
         echo ${PREVDATE}
         for CAMERA in ${MOTIONCAMERADIRS}
         do
-                echo "${CAMERA}/${PREVDATE}"
+                echo checking "${CAMERA}/${PREVDATE}"
                 if [ -d "${CAMERA}/${PREVDATE}" ]
                 then
-                        echo "${CAMERA}/${PREVDATE}"
+                        echo deleting "${CAMERA}/${PREVDATE}"
                         rm -rf "${CAMERA}/${PREVDATE}"
                 fi
         done
